@@ -1,0 +1,27 @@
+.summary {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+.row:not(:last-child) {
+  border-bottom: 1px dashed #dee2e6;
+}
+
+.total {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid #dee2e6;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #212529;
+}

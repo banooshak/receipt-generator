@@ -1,0 +1,76 @@
+:root {
+  /* Updated brand colors for a more professional look */
+  --color-brand-primary: #892B21;     /* Deep burgundy red */
+  --color-brand-primary-light: #A23B31; /* Lighter shade for hover */
+  --color-brand-primary-dark: #6E2219;  /* Darker shade for active */
+
+  --color-brand-secondary: #1B4965;
+  --color-brand-accent: #FFB703;
+
+  /* Updated surface colors for better contrast */
+  --color-surface-primary: #FFFFFF;
+  --color-surface-secondary: #E2E8F0;  /* Darker background */
+  --color-surface-tertiary: #CBD5E1;   /* Adjusted tertiary color */
+
+  --color-border-light: #DEE2E6;
+  --color-border-medium: #CED4DA;
+  --color-border-dark: #ADB5BD;
+
+  --color-text-primary: #212529;
+  --color-text-secondary: #495057;
+  --color-text-disabled: #6C757D;
+
+  --shadow-sm: 0 1px 2px rgba(33, 37, 41, 0.1);
+  --shadow-md: 0 2px 4px rgba(33, 37, 41, 0.15);
+  --shadow-lg: 0 4px 6px rgba(33, 37, 41, 0.1);
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface-secondary);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure proper contrast for focus states - WCAG */
+*:focus {
+  outline: 3px solid var(--color-brand-accent);
+  outline-offset: 2px;
+}
+
+/* Ensure text remains visible during webfont load - WCAG */
+body {
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure content takes available space */
+main {
+  flex: 1;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}

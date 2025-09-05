@@ -1,0 +1,89 @@
+.productItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background-color: #FFFFFF;  /* Explicit white background */
+  border: 1px solid #6B7280;  /* Darker border for better contrast */
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.productItem:hover {
+  background-color: #E5E7EB;  /* Darker hover state */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.selected {
+  background-color: #DBEAFE;  /* Higher contrast blue background */
+  border-color: #2563EB;  /* Darker blue border */
+}
+
+.nameBox {
+  flex: 1;
+  min-width: 200px;
+}
+
+.productInfo {
+  flex: 1;
+}
+
+.detailsBox {
+  flex: 2;
+}
+
+.productName {
+  margin: 0 0 4px;
+  font-size: 1.1rem;  /* Increased from default */
+  font-weight: 600;    /* Made bolder */
+  color: #1F2937;         /* Darker text for better contrast */
+}
+
+.detailRow {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.quantityButton {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #0066cc;
+  background-color: #ffffff;
+  color: #0066cc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.quantity {
+  min-width: 32px;
+  text-align: center;
+  font-weight: 600;
+  color: #0066cc;
+}
+
+.productMeta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.categoryLabel {
+  margin: 0;
+  color: #4B5563;  /* Darker secondary text for better contrast */
+  font-size: 0.9rem;
+}
